@@ -17,8 +17,8 @@ client = OpenAI(
 print("Sveiki, uzduokite klausima apie Birzus")
 
 while True:
-    question = input ("Klausimas apie Biržus:   ")
-    if question.lower() == "exit":
+    question = input ("Klausimas apie Biržus: ")
+    if question.lower() == "baigti":
         print("Atsisveikiname!")
         break
     response = client.chat.completions.create(
@@ -37,5 +37,5 @@ while True:
         model=model
     )
     print(response.choices[0].message.content)
-    print("Jei norite baigti, įveskite 'exit'.")
+    print("Jei norite baigti, įveskite 'baigti'.")
     print("Jei norite užduoti kitą klausimą, įveskite naują klausimą.") 
