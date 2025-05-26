@@ -22,7 +22,7 @@ response = client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": "Tell me a joke about Lithuania. Always respond in Lithuanian.",
+            "content": "tell me a joke about Lithunia. Use only lithuanian language",
         }
     ],
     temperature=1.0,
