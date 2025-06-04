@@ -33,7 +33,7 @@ def is_lithuanian_text(text: str) -> UserInputLanguage:
     response = response.choices[0].message.parsed
     return response
 
-user_input_text = input("Please enter the text: ")
+user_input_text = input("Please enter text: ")
 
 user_language = is_lithuanian_text(user_input_text)
 
