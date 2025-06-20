@@ -33,3 +33,5 @@ def get_account(account_id: int):
 def delete_account(account_id: int):
     accounts[:] = [account for account in accounts if account.id != account_id]
     return {"message": "Account deleted successfully"}
+
+
